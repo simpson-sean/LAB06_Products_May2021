@@ -1,6 +1,12 @@
 // import functions and grab DOM elements
+const addButton = document.getElementById('add-button');
+
+
 
 // initialize state
+
+
+
 
 // set event listeners 
   // get user input
