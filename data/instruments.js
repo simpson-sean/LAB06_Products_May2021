@@ -3,8 +3,8 @@ const guitar = {
     name: 'Guitar',
     image: 'electricGuitar.png',
     description: 'Solid Body strat',
-    category: 'sting-instrumnet',
-    price: '200.00',
+    category: 'string-instrument',
+    price: 200,
 };
 
 const bassGuitar = {
@@ -13,7 +13,7 @@ const bassGuitar = {
     image: 'bassGuitar.png',
     description: 'Solid body Electric Bass',
     category: 'string-instrument',
-    price: '150.00',
+    price: 150,
 };
 
 const clarinet = {
@@ -22,7 +22,7 @@ const clarinet = {
     image: 'clarinet.png',
     description: 'Black Clarinet',
     category: 'wood-wind',
-    price: '120.00',
+    price: 120,
 };
 
 const altoSaxophone = {
@@ -31,7 +31,7 @@ const altoSaxophone = {
     image: 'altoSaxophone.png',
     description: 'Brass Alto Saxophone',
     category: 'wood-wind',
-    price: '145.00',
+    price: 145,
 };
 
 const drumKit = {
@@ -40,7 +40,7 @@ const drumKit = {
     image: 'drumKit.png',
     description: 'Full Drum Kit',
     category: 'persussion',
-    price: '500.00',
+    price: 500,
 };
 
 const instruments = [
