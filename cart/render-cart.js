@@ -13,7 +13,7 @@ export function renderCartItem(cartItems) {
     // we need price and the name of the item
     // the price and the name live in the rows of the other array
     // to get the name and the species, we need to get the id from the cartItem and go find the corresponding animal in the feltAnimals array. luckily we have a function that can do just that!
-    const instrumentList = findById(instrumentList, cartItem.id);
+    const instrumentID = findById(instrumentList, cartItems.id);
 
     // then all we have to do is make some DOM elements
     const tr = document.createElement('tr');
@@ -23,18 +23,18 @@ export function renderCartItem(cartItems) {
     const totalTd = document.createElement('td');
 
     // and inject the name from the instruments
-    nameTd.textContent = instrumentList.name;
+    nameTd.textContent = instrumentID.name;
     
     // the quantity from the cart item
     quantityTd.textContent = cartItems.quantity;
     
     // and the price from the instrument
-    priceTd.textContent = instrumentList.price.toLocaleString('en-US', { 
+    priceTd.textContent = instrumentID.price.toLocaleString('en-US', { 
         style: 'currency',
         currency: 'USD',
     });
 
-    const total = instrumentList.price * cartItem.quantity;
+    const total = instrumentID.price * cartItems.quantity;
 
     totalTd.textContent = total.toLocaleString('en-US', { 
         style: 'currency',
@@ -52,9 +52,9 @@ export function getCartTotal() {
     let accumulator = 0;
 
     for (let item of cartItems) {
-        const instrumentList = findById(instrumentList, item.id);
+        const instrumentTotal = findById(instrumentList, item.id);
 
-        const total = item.quantity * instrumentList.price;
+        const total = item.quantity * instrumentTotal.price;
 
         accumulator = accumulator + total;
     }

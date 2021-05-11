@@ -1,11 +1,12 @@
 import { renderCartItem, getCartTotal } from './render-cart.js';
-import { instrumentList } from '../data/instruments.js';
+//import { instrumentList } from '../data/instruments.js';
+import { cartItems } from '../cart-items.js';
 
 const anchor = document.querySelector('tbody');
 const total = document.getElementById('total');
  
 for (let item of cartItems) {
-    const tableRow = renderCart(item);
+    const tableRow = renderCartItem(item);
 
     anchor.append(tableRow);
 
