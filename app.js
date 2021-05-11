@@ -1,4 +1,5 @@
 // import functions and grab DOM elements
+const instrumentList = document.getElementById('instrument-list');
 const addButton = document.getElementById('add-button');
 
 

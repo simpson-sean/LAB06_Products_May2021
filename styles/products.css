@@ -15,7 +15,7 @@ button {
     margin-left: 10px;
 }
 
-#instruments {
+#instruments-list {
     display: flex;
     list-style-type: none;
     flex-wrap: wrap;
