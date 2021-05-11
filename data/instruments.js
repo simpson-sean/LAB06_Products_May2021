@@ -1,7 +1,7 @@
 const guitar = {
     id: 'guitar',
     name: 'Guitar',
-    image: 'electricGuitar.png',
+    image: 'electricGuitar2.png',
     description: 'Solid Body strat',
     category: 'string-instrument',
     price: 200,
@@ -10,7 +10,7 @@ const guitar = {
 const bassGuitar = {
     id: 'bassGuitar',
     name: 'Bass Guitar',
-    image: 'bassGuitar.png',
+    image: 'bassGuitar2.png',
     description: 'Solid body Electric Bass',
     category: 'string-instrument',
     price: 150,
@@ -19,7 +19,7 @@ const bassGuitar = {
 const clarinet = {
     id: 'clarinet',
     name: 'Clarinet',
-    image: 'clarinet.png',
+    image: 'clarinet2.png',
     description: 'Black Clarinet',
     category: 'wood-wind',
     price: 120,
@@ -28,7 +28,7 @@ const clarinet = {
 const altoSaxophone = {
     id: 'altoSaxophone',
     name: 'Alto Saxophone',
-    image: 'altoSaxophone.png',
+    image: 'altoSaxophone2.png',
     description: 'Brass Alto Saxophone',
     category: 'wood-wind',
     price: 145,
