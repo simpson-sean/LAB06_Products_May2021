@@ -7,13 +7,8 @@ main {
 
 }
 
-.header.div {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 500;
-}
-
 .sellingImg {
-    height: 300px;
+    height: 200px;
 }
 
 button {
@@ -29,9 +24,16 @@ button {
 }
 
 .box {
-    border: 1px black solid;
-    background-color: hsla(340, 85%, 16%, .4);
+    border: 1px hsla(55, 26%, 18%, 1) solid;
+    background-color: hsla(340, 85%, 16%, .2);
     margin: 20px;
     border-radius: 20px 20px 20px 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    color: ;
 }
 
+.banner {
+    color:burlywood;
+    font-size: 50px
+    
+}
