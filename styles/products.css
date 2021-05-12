@@ -25,11 +25,12 @@ button {
 
 .box {
     border: 1px hsla(55, 26%, 18%, 1) solid;
-    background-color: hsla(340, 85%, 16%, .2);
+    background-color: hsla(190, 7%, 49%, .5);
     margin: 20px;
     border-radius: 20px 20px 20px 20px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-    color: ;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: large;
+    color: hsla(181, 28%, 70%, 1);
 }
 
 .banner {
@@ -37,3 +38,22 @@ button {
     font-size: 50px
     
 }
+
+.main-section {
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    border: 3px cornsilk solid;
+
+}
+
+table {
+    border:1px black solid;
+    margin: 1px;
+    text-align: center;
+}
+
+th {
+    background-color: darkgray;
+}
+
