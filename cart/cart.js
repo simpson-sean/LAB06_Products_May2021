@@ -1,12 +1,15 @@
+
+//Import Cart Render function and import cart data from local storage
 import { renderCartItem, getCartTotal } from './render-cart.js';
-//import { instrumentList } from '../data/instruments.js';
 import { getCart } from '../cart/local-storage.js';
 
+//Set constants to pull information from index
 const anchor = document.querySelector('tbody');
 const total = document.getElementById('total');
 const cartItems = getCart();
-const orderButton = document.getElementById('order-button')
- 
+const orderButton = document.getElementById('order-button');
+
+//Loop through cart
 for (let item of cartItems) {
     const tableRow = renderCartItem(item);
 
