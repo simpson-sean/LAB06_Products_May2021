@@ -1,12 +1,17 @@
 // we know we will need our raw instrument data because that's where the name and price live
 import { instrumentList } from '../data/instruments.js';
-import { cartItems } from '../cart-items.js';
+
 
 // we know we will need findById because that's where the quantity lives
 import { findById } from '../utils.js';
+import { getCart } from '../cart/local-storage.js';
+
 // instrumentList has price, name, etc
 // cartItem has id, quantity
 // this function should take in a cart item and return a table row with all the good data
+
+const cartInstruments = getCart();
+
 
 export function renderCartItem(cartItems) {
     // cart item has only: quantity and id
@@ -51,7 +56,7 @@ export function renderCartItem(cartItems) {
 export function getCartTotal() {
     let accumulator = 0;
 
-    for (let item of cartItems) {
+    for (let item of cartInstruments) {
         const instrumentTotal = findById(instrumentList, item.id);
 
         const total = item.quantity * instrumentTotal.price;

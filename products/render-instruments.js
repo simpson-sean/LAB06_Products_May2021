@@ -1,3 +1,5 @@
+import { addItemToCart } from '../cart/local-storage.js';
+
 export default { renderInstruments };
 
 export function renderInstruments(instrument) {
@@ -20,11 +22,23 @@ export function renderInstruments(instrument) {
     p.classList.add('price');
     p.textContent = `$${instrument.price.toFixed(2)}`;
 
-    const btn = document.createElement('button');
-    btn.textContent = 'Add';
-    btn.value = instrument.id;
-    p.appendChild(btn);
+    const buyButton = document.createElement('button');
+    buyButton.textContent = 'Add';
+    buyButton.value = instrument.id;
+    p.appendChild(buyButton);
 
+    buyButton.addEventListener('click', () => {
+        addItemToCart(instrument.id);
+        
+    });
+   
+   
+   
     li.appendChild(p);
     return li;
+
+
+
+
+
 }

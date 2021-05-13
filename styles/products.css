@@ -57,3 +57,12 @@ th {
     background-color: darkgray;
 }
 
+#place-order {
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+    padding: 4px;
+    justify-content: center;
+
+}
+
